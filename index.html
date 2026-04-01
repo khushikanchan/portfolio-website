@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khushi Kanchan | Cyber Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+
+}
+
+/* Social Icons */
+.social-icons a {
+  margin-left: 15px;
+  font-size: 20px;
+  color: #00fff7;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: white;
+  text-shadow: 0 0 10px #00fff7;
+}
+
+body {
+  margin:0;
+  font-family:Poppins;
+  background:#020c1b;
+  color:#ccd6f6;
+  overflow-x:hidden;
+}
+
+/* PARTICLE BACKGROUND */
+#particles {
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  padding:20px 10%;
+  background:rgba(0,0,0,0.5);
+}
+
+section {padding:80px 10%;}
+
+.hero {text-align:center;height:100vh;display:flex;align-items:center;justify-content:center;}
+
+.dp {
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  border:3px solid #00fff7;
+  box-shadow:0 0 25px #00fff7;
+}
+
+/* CYBER GLOW TEXT */
+.highlight {color:#00fff7;text-shadow:0 0 10px #00fff7;}
+
+/* SCROLL ANIMATION */
+.fade {
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+.fade.show {
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* 3D CARD */
+.card {
+  background:#112240;
+  padding:20px;
+  border-radius:15px;
+  transition:0.3s;
+  transform-style:preserve-3d;
+}
+.card:hover {
+  transform:rotateY(10deg) rotateX(10deg);
+  box-shadow:0 0 20px #00fff7;
+}
+
+.grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+
+/* SKILL BAR */
+.bar span {
+  display:block;
+  height:8px;
+  background:#00fff7;
+}
+
+button {
+  background:#00fff7;
+  border:none;
+  padding:10px 20px;
+  cursor:pointer;
+}
+
+footer {
+  background: #020c1b;
+  text-align: center;
+  padding: 40px 10%;
+  border-top: 1px solid #00fff7;
+}
+
+.footer-content p {
+  margin: 10px 0;
+}
+
+button {
+  background: transparent;
+  border: 2px solid #00fff7;
+  color: #00fff7;
+  padding: 12px 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: #00fff7;
+  color: #020c1b;
+  box-shadow: 0 0 15px #00fff7;
+}
+
+</style>
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<nav>
+<h2 class="highlight">Khushi Kanchan</h2>
+<div class="social-icons">
+  <a href="mailto:khushikanchan862@gmail.com"><i class="fas fa-envelope"></i></a>
+  <a href="https://github.com/khushikanchan" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://linkedin.com/in/khushi-kanchan" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div>
+</nav>
+
+<section class="hero fade">
+<div>
+<img src="images/profile.jpg" class="dp">
+<h1>Hello I'm <span class="highlight">Khushi</span></h1>
+<p>Cybersecurity | Web Developer</p>
+<a href="resume.pdf" target="_blank">
+  <button>📄 Download Resume</button>
+</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="fade">
+<h2>About Me</h2>
+<div class="grid">
+  <div class="card">
+    <p>
+      I am Khushi Kanchan, currently pursuing B.Tech in Cybersecurity at Srinivas University Institute of Engineering and Technology, Mukka with a CGPA of 8.33.  
+      <br><br>  
+      I’m a passionate web developer with a strong interest in building clean and user-friendly applications. I enjoy working with technologies like <span class="highlight">HTML, CSS, JavaScript</span>, and modern frameworks to create responsive digital experiences.
+      <br><br>
+      I’m a problem-solver at heart and love turning ideas into functional products. Currently, I’m focused on improving my skills and working on real-world projects.
+      <br><br>
+      Outside of coding, I enjoy learning new technologies and exploring creative ideas. I’m always open to opportunities where I can grow and contribute.
+    </p>
+  </div>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section class="fade">
+<h2>Education</h2>
+<div class="grid">
+  <div class="card"><h3>B.Tech (Cybersecurity) -2023-2027</h3><p>SUIET Mukka | CGPA: 8.33</p></div>
+  <div class="card"><h3>PUC (Science) -2021-2023</h3><p> MGM PU College Udupi | Percentage: 88%</p></div>
+  <div class="card"><h3>SSLC (ICSE Board)</h3><p>Glowinstar Integrated School Ambalpady | Percentage: 85%</p></div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section class="fade" id="skills">
+  <h2>Skills</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>💻 Programming Languages</h3>
+      <p>Python, Java, C, JavaScript</p>
+    </div>
+
+    <div class="card">
+      <h3>🌐 Web Development</h3>
+      <p>HTML, CSS, JavaScript, Node.js, MERN Stack</p>
+    </div>
+
+    <div class="card">
+      <h3>🗄️ Databases</h3>
+      <p>MongoDB, MySQL</p>
+    </div>
+
+    <div class="card">
+      <h3>⛓️ Blockchain</h3>
+      <p>Solidity, Ganache, Truffle</p>
+    </div>
+
+    <div class="card">
+      <h3>🔐 Cybersecurity Tools</h3>
+      <p>Wireshark, Nmap, Burp Suite, SQLMap, John the Ripper</p>
+    </div>
+
+    <div class="card">
+      <h3>🧠 Soft Skills</h3>
+      <p>Communication, Leadership, Problem Solving, Quick Learner</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- INTERNSHIPS -->
+<section class="fade">
+<h2>Internships</h2>
+<div class="grid">
+  <div class="card">💼 Cyber Security Intern - TechnoHacks Solutions</div>
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="fade">
+<h2>Certifications</h2>
+
+<div class="grid">
+
+  <div class="card">
+    <h3>📜 My Certifications</h3>
+
+  <p style="font-size:14px; color:#aaa;">
+    Includes Cisco, IBM, IEEE & Internship Certificates
+  </p>
+
+    <a href="certificates/all-certificates.pdf" target="_blank">
+      <button>View Certificates</button>
+    </a>
+  </div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section class="fade">
+<h2>Projects (Auto GitHub)</h2>
+<div id="github-projects" class="grid"></div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="fade">
+<h2>Achievements</h2>
+<div class="grid">
+  <div class="card">Office Bearer - SATARC Cyber Security Student Association</div>
+  <div class="card">Membership Coordinator - Leo Club, SUIET</div>
+  <div class="card">Coordinated Numerous Technical and Cultural Events</div>
+  <div class="card">Participated in various competitions</div>
+</div>
+</section>
+
+<script>
+/* PARTICLES */
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+let particles=[];
+
+for(let i=0;i<100;i++){
+  particles.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,r:1});
+}
+
+function draw(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  ctx.fillStyle="#00fff7";
+  particles.forEach(p=>{
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fill();
+  });
+}
+setInterval(draw,50);
+
+/* SCROLL ANIMATION */
+const fades=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+  fades.forEach(f=>{
+    if(f.getBoundingClientRect().top<window.innerHeight-100){
+      f.classList.add('show');
+    }
+  });
+});
+
+/* GITHUB API */
+fetch('https://api.github.com/users/khushikanchan/repos')
+.then(res=>res.json())
+.then(data=>{
+  let html='';
+  data.slice(0,4).forEach(repo=>{
+    html+=`<div class="card"><h3>${repo.name}</h3></div>`;
+  });
+  document.getElementById('github-projects').innerHTML=html;
+});
+
+
+</script>
+</script>
+
+<footer>
+  <div class="footer-content">
+    <h2 class="highlight">Khushi Kanchan</h2>
+    <p>Cybersecurity Enthusiast | Web Developer</p>
+
+    <div class="social-icons">
+      <a href="mailto:khushikanchan862@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/khushikanchan" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/khushi-kanchan" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <p style="margin-top:15px; font-size:14px;">
+      © 2026 Khushi Kanchan. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
